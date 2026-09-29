@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "InField 7",
+    "slug": "infield7",
+    "scheme": "infield7",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "experiments": {
+      "typedRoutes": true
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.infield7.app"
+    },
+    "android": {
+      "package": "com.infield7.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#F7F4EC",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "InField uses your location to confirm you are inside a site."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "InField uses the camera for your check-in photo.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ]
+  }
+}

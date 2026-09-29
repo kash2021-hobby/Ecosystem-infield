@@ -1,0 +1,55 @@
+import { StyleSheet } from "react-native";
+
+export const colors = {
+  green: "#3DDC6A",
+  greenDeep: "#0E7A3D",
+  greenSoft: "#E5F8EA",
+  ink: "#1C2430",
+  ink3: "#6E7680",
+  ink4: "#C5C3BC",
+  amber: "#E2B043",
+  cream: "#F7F4EC",
+  cream2: "#EFEAE0",
+  paper: "#FFFFFF",
+  coral: "#D4533E",
+  coralSoft: "#FDECEA",
+};
+
+export const styles = StyleSheet.create({
+  screen: { flex: 1, backgroundColor: colors.cream, padding: 20 },
+  title: { fontSize: 28, fontWeight: "700", color: colors.ink, letterSpacing: -0.6, marginBottom: 8 },
+  sub: { color: colors.ink3, fontSize: 15, lineHeight: 22, marginBottom: 16 },
+  label: { fontSize: 13, fontWeight: "600", color: colors.ink, marginBottom: 8 },
+  input: {
+    backgroundColor: colors.cream,
+    borderWidth: 1,
+    borderColor: colors.cream2,
+    borderRadius: 12,
+    paddingHorizontal: 14,
+    paddingVertical: 12,
+    fontSize: 16,
+    color: colors.ink,
+    marginBottom: 12,
+  },
+  button: {
+    backgroundColor: colors.ink,
+    borderRadius: 12,
+    paddingVertical: 14,
+    alignItems: "center",
+    marginTop: 8,
+  },
+  buttonText: { color: colors.paper, fontWeight: "600", fontSize: 16 },
+  secondary: { backgroundColor: colors.paper, borderWidth: 1, borderColor: colors.cream2 },
+  secondaryText: { color: colors.ink },
+  error: { backgroundColor: colors.coralSoft, color: colors.coral, borderRadius: 12, padding: 12, marginBottom: 12 },
+  notice: { backgroundColor: colors.greenSoft, color: colors.greenDeep, borderRadius: 12, padding: 12, marginBottom: 12 },
+  card: {
+    backgroundColor: colors.paper,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: colors.cream2,
+    padding: 16,
+    marginBottom: 12,
+  },
+  row: { flexDirection: "row", gap: 8 },
+});

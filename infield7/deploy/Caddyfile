@@ -1,0 +1,12 @@
+__APP_HOST__ {
+	encode gzip
+	reverse_proxy 127.0.0.1:3000
+}
+
+__API_HOST__ {
+	encode gzip
+	request_body {
+		max_size 15MB
+	}
+	reverse_proxy 127.0.0.1:4000
+}
